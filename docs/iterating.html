@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/vendor/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/vendor/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/assets/css/app.css">
+    <title></title>
+  </head>
+  <body>
+    <nav class="navbar navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a href="/" class="navbar-brand"><i class="bi bi-house-fill"></i></a>
+      </div>
+    </nav>
+    
+    <main class="container my-3">
+      <h3 class="mb-4">Iterating with Async &amp; Await</h3>
+      <div class="loader d-none">
+        <img src="/assets/img/loading.svg" alt="loading..." />
+        loading...
+      </div>
+      <div class="row">
+        <div class="col-4">
+          <div class="d-flex flex-column">
+            <button class="btn btn-sm btn-dark opacity-25" onclick="get()">Get</button>
+            <button class="btn btn-sm btn-dark opacity-50" onclick="getCatch()">Handle Errors</button>
+            <button class="btn btn-sm btn-dark opacity-75" onclick="chain()">Chain</button>
+            <button class="btn btn-sm btn-dark opacity-100" onclick="concurrent()">Concurrent</button>
+            <button class="btn btn-sm btn-dark opacity-75" onclick="parallel()">Parallel</button>
+          </div>
+        </div>
+        <div class="col-8">
+          <div class="results">
+            <h5>Results</h5>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="/assets/vendor/jquery/dist/jquery.min.js"></script>
+    <script src="/assets/vendor/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="/assets/vendor/axios/dist/axios.min.js"></script>
+    <script src="/assets/js/app.js"></script>
+
+    <script type="module" src="/assets/js/app.iterating.js"></script>
+  </body>
+</html>
