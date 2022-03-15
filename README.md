@@ -14,4 +14,4 @@ Asynchronous programming is often intimidating, it's not how we normally conside
 
 ### Summary
 ---
-:skull:
+:skull: Excellence break down of all things `promise`... 
